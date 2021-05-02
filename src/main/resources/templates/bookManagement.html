@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Registration</title>
+    <style>
+        .center {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Include header.html -->
+<th:block th:include="/header"></th:block>
+
+<h2 class="center">Books you may like</h2>
+<br>
+<div style="display: inline-block;">
+
+
+    <a th:href="@{/bookCreate}">Create</a>
+
+    &nbsp;
+
+    <a th:href="@{/bookUpdate}">Update</a>
+
+    &nbsp;
+    &nbsp;
+
+
+</div>
+</body>
+</html>
